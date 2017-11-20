@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        function changecolor()
+        {
+            document.getElementById('changecolor').style.color='red';
+        }
+         
+    </script>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Nazmul Button</button>
+    <button onclick="document.getElementById('demo').innerHTML ='hello its nazmul'">Mohon Button</button>
+    <p id="demo"></p>
+
+    <h1>bulb off and on event changing picture</h1>
+
+    <button type="button" onclick="document.getElementById('bulb').src='img/bulbon.jpg'">Please On</button>
+
+    <img id="bulb" src="img/bulboff.jpg" alt="off">
+
+    <button type="button" onclick="document.getElementById('bulb').src='img/bulboff.jpg'">Please Off</button>
+    
+    <br>
+    <hr>
+
+    <p id="borosize">we are codiing</p>
+
+    <button type="button" onclick="document.getElementById('borosize').style.fontSize='30px'">click for big</button>
+
+    <button type="button" onclick="document.getElementById('borosize').style.fontSize='10px'">click for small</button>
+
+    <br>
+    <hr>
+
+    <p id="demo2" style="display:none">Hello JavaScript!</p>
+    
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button>
+
+    <hr>
+
+    <p id="changecolor">Change my color to red</p>
+
+    <button type="button" onclick="changecolor()">click me for color change</button>
+
+    <hr>
+
+    <p id="borderkora">please border me</p>
+    <button type="button" onclick="border()">click for border</button>
+
+    <hr>
+    <button type="button" onclick="window.alert('Error sending alert')">Send Alert</button>
+
+    <hr>
+
+    <script>
+        function jog()
+        {
+            var x, y, z;
+            x = 5;
+            y = 6;
+            z = x+y;
+
+            document.getElementById('jogfol').innerHTML=z;
+        }
+    </script>
+
+
+
+    <p id="jogfol"></p>
+    <button type="button" onclick="jog()">click for Sum</button>
+
+
+    <p>------------------------------19-11-17---------------------------------</p>
+
+    <script>
+        function singlelinesum(){
+            var x = 10, y=20,z =30;
+            var result = z-y+x;
+
+            document.getElementById('singlelinesum').innerHTML=result;
+            document.getElementById('singlelinesum2').innerHTML=result;
+        }
+        
+    </script>
+
+
+    <p id="singlelinesum"></p>
+    <p id="singlelinesum2"></p>
+    <button type="button" onclick="singlelinesum()">inline jog</button>
+
+
+
+    <script>
+        function functionvalue(p1,p2)
+        {
+            return p1*p2;
+        }
+        function fun()
+        {
+            document.getElementById('functionvalue').innerHTML=functionvalue(5,5);
+        }
+        
+    </script>
+
+
+    <p>Javascript function..</p>
+    <p id="functionvalue"></p>
+    <button type="button" onclick="fun()">function</button>
+
+
+
+    <script>
+        var car = {
+            name: "AUDI",
+            Model: "Rs7",
+            price:1200
+        };
+
+        function javaobj()
+        {
+            var x = car.name;
+            var y = car.Model;
+            var z = car.price;
+            document.getElementById('javaobj').innerHTML=x;
+            document.getElementById('javaobj2').innerHTML=y;
+            document.getElementById('javaobj3').innerHTML=z;
+        }
+    </script>
+    <p>Javascript object.</p>
+    <p id="javaobj"></p>
+    <p id="javaobj2"></p>
+    <p id="javaobj3"></p>
+    <button type="button" onclick="javaobj()">Object</button>
+
+</body>
+</html>
